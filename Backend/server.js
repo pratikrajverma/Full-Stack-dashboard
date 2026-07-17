@@ -24,6 +24,10 @@ app.use(router)
 connectDb()
 
 
+app.get('/',(req,res)=>{
+    res.send('<h1>welcome to Backend</h1>')
+})
+
 app.listen(port, ()=>{
     console.log('server is running on port', port)
 })
