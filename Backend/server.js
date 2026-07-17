@@ -9,7 +9,7 @@ dotenv.config()
 import connectDb from './database/mogodb.js'
 import router from './routes/userRoute.js'
 
-const port =    process.env.PORT  
+const port =    process.env.PORT  || 4000
  
 app.use(cors({
     origin:'*',
