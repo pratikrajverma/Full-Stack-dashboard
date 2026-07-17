@@ -2,12 +2,15 @@ import express from 'express'
 import cors from 'cors'
 const app = express()
 
+import dotenv  from 'dotenv'
+dotenv.config()
+
+
 import connectDb from './database/mogodb.js'
 import router from './routes/userRoute.js'
 
-const port = 4000
-
-
+const port =    process.env.PORT  
+ 
 app.use(cors({
     origin:'*',
     methods:['GET', 'POST' , 'PUT', 'DELETE']
