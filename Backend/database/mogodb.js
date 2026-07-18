@@ -2,7 +2,11 @@ import mongoose from "mongoose";
 
 const connectDb = async()=>{
     try {
-        await mongoose.connect('mongodb://localhost:27017/databaseSecurity')
+
+                
+        await mongoose.connect('mongodb+srv://pratikrajvermalxlx_db_user:mFCaGYviIkHJtzIR@cluster0.qwcluip.mongodb.net/')
+
+        
         console.log('database connected successfully....')
 
 
