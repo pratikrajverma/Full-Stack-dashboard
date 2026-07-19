@@ -28,7 +28,7 @@ const Signup = () => {
         try {
 
             const response = await axios.post(
-                "https://full-stack-dashboard-1.onrender.com/signup",
+                "http://localhost:3000/signup",
                 formData
             );
 

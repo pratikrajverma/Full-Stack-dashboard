@@ -31,7 +31,7 @@ const Dashboard = () => {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "https://full-stack-dashboard-1.onrender.com/profile",
+                "http://localhost:3000/profile",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

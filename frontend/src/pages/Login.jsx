@@ -25,7 +25,7 @@ const Login = () => {
     try {
 
       const response = await axios.post(
-        "https://full-stack-dashboard-1.onrender.com/login",
+        "http://localhost:3000/login",
         formData
       );
 
@@ -40,7 +40,7 @@ const Login = () => {
 
        navigate("/dashboard");
 
-    } catch (error) {
+    } catch (error) { 
 
       console.log(error);
 
