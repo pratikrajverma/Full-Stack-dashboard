@@ -4,16 +4,17 @@ const connectDb = async()=>{
     try {
 
                 
-        await mongoose.connect('mongodb+srv://pratikrajvermalxlx_db_user:mFCaGYviIkHJtzIR@cluster0.qwcluip.mongodb.net/')
-
         
+        await mongoose.connect('mongodb://PratikDatabase:bootcampdatabase@ac-uti8jfb-shard-00-00.qwcluip.mongodb.net:27017,ac-uti8jfb-shard-00-01.qwcluip.mongodb.net:27017,ac-uti8jfb-shard-00-02.qwcluip.mongodb.net:27017/?ssl=true&replicaSet=atlas-4cxd0f-shard-0&authSource=admin&appName=Cluster0')
+
+            
         console.log('database connected successfully....')
+ 
 
-
-    } catch (error) {
-        console.log('failed to connect to database',error)
+    } catch (error) {  
+        console.log('failed to connect to database',error) 
         process.exit(1)
-    }
-}
+    } 
+}  
 
 export default connectDb
